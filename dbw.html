@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>DBW-Render</title>
+</head>
+
+<body>
+<h1>DBW-Render</h1>
+DBW-Render (or DBWRender) is an old ray tracing program, from the late 1980s.
+David Wecker wrote it on a DEC VAX minicomputer, and ported the result to the Amiga,
+which is the version I got to play with. Back then ray tracers were still a novelty on
+home computers, and many spent hours waiting for the image to draw (and further hours
+defining scenes by manually specifying the location of each geometric shape in a text
+file).
+<p>
+Given its age, the output from DBW-Render is pretty impressive: for its time, the
+shadowing algorithm produces very nice results, as shown below.
+<p style="text-align:center;"><img src="dbw_glass.png">
+<p>
+What I have here is a Windows console mode (that is, you run it from the Command Prompt)
+build, based on John Lowery's MS-DOS port of David's Amiga original.
+The only changes I have made to the core are to increase image resolution and colour depth.
+In addition, the whole package has been rebuilt with GCC 3 and a completely new program for
+displaying the ray tracer's output has been written.
+On my PC the above image is rendered in less than a minute at a resolution of 800x600,
+compared with about 8 hours on my old Amiga, and that was only at a resolution of 320x200.
+Source code is included, and it shouldn't be too hard to get it to build on Linux or some
+other modern Unix.
+<p>
+Executables and source code can be downloaded from
+<a href="https://github.com/DavidKinder/DBWRender/releases/">DBW-Render's GitHub release</a> page.
+<p>
+In case it is of any interest, also here is the <a href=apdc13.adf>original</a> Amiga version.
+This is an emulator image of an Amiga disk with DBW-Render on it. This can either be written
+back to a real Amiga disk, or used with an Amiga emulator such as
+<a href=https://www.winuae.net/>WinUAE</a>.
+</body>
+<p>
+<i><a href="index.html">Return to the main index</i>
+</html>
+
